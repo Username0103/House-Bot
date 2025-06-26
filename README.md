@@ -1,5 +1,5 @@
 # House-Bot
-## Space simulation bot in Discord made in Go.
+## Space simulation bot in Discord made in C#.
 
 - Simulate a space where each channel is a room and you can move around. Each user can only be in one room at once.
 - You can move between rooms with !move \<roomName>.

@@ -1,6 +1,6 @@
 using dotenv.net;
 
-namespace root.src.house_bot.misc
+namespace root.src.house_bot.Misc
 {
     public static class GetToken
     {

@@ -18,7 +18,7 @@
 - JSON file might be like:
 ```json
 {
-  "Channel1": {
+  "Category1": {
     "room1": {
       "displayName": "Room One",
       "accessibleByRoles": [
@@ -40,17 +40,17 @@
       ]
     },
     "room2": {
-      
+      ...
     }
   },
   "meta": {
-    "startChannel": "room1",
+    "startRoom": "room1",
     "movementTimeSeconds": 3
   }
 }
 ```
 \> Notes:
-- Use Discord's 'ephemeral message' feature to send messages only visible to one person in a channel once the user arrives.  
+- Use Discord's 'ephemeral message' feature to send messages only visible to one person in a room once the user arrives.  
 - Make sure to warn during setup that ambientNoise needs to repeat well.  
 - Lockable is an optional property.  
   

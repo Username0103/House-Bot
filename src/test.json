@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "startRoom": "town_square",
+    "movementTimeSeconds": 5
+  },
+  "main_map": {
+    "town_square": {
+      "displayName": "Town Square",
+      "entranceMessage": "You are standing in the bustling town square. Cobblestone paths lead north and east. A large fountain bubbles in the center.",
+      "ambientNoise": "fountain_and_crowd.ogg",
+      "connectedTo": [
+        {
+          "id": "north_road",
+          "directionFromHere": "N"
+        },
+        {
+          "id": "market_street",
+          "directionFromHere": "E"
+        }
+      ]
+    },
+    "north_road": {
+      "displayName": "North Road",
+      "entranceMessage": "You are on a dusty road leading out of town. The town square is to the south, and you see the city gates further north.",
+      "teaserMessage": "You see a dusty road leading north out of town.",
+      "lockable": true,
+      "connectedTo": [
+        {
+          "id": "town_square",
+          "directionFromHere": "S"
+        },
+        {
+          "id": "city_gates",
+          "directionFromHere": "N"
+        }
+      ]
+    },
+    "city_gates": {
+      "displayName": "City Gates",
+      "entranceMessage": "The massive iron-banded gates of the city stand before you, flanked by two guard towers. The road continues south back into town.",
+      "teaserMessage": "In the distance, you can see the formidable city gates.",
+      "connectedTo": [
+        {
+          "id": "north_road",
+          "directionFromHere": "S"
+        }
+      ]
+    },
+    "market_street": {
+      "displayName": "Market Street",
+      "entranceMessage": "The street is lined with colourful stalls. The smell of spices and fresh bread fills the air. The town square is to the west.",
+      "teaserMessage": "You hear the din of a busy market to the east.",
+      "ambientNoise": "market_chatter.ogg",
+      "connectedTo": [
+        {
+          "id": "town_square",
+          "directionFromHere": "W"
+        }
+      ]
+    }
+  },
+  "sewer_system": {
+    "sewer_entrance": {
+      "displayName": "Sewer Grate",
+      "entranceMessage": "You slip through a loose grate into the damp, smelly sewers below the city. A ladder leads back up.",
+      "lockable": false,
+      "connectedTo": [
+        {
+          "id": "town_square",
+          "directionFromHere": "up"
+        },
+        {
+          "id": "slimy_tunnel",
+          "directionFromHere": "S"
+        }
+      ]
+    },
+    "slimy_tunnel": {
+      "displayName": "Slimy Tunnel",
+      "entranceMessage": "A narrow, slimy tunnel stretches before you. It's hard to keep your footing.",
+      "teaserMessage": "A dark, narrow tunnel continues south.",
+      "connectedTo": [
+        {
+          "id": "sewer_entrance",
+          "directionFromHere": "N"
+        }
+      ]
+    }
+  }
+}
